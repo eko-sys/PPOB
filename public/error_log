@@ -1,0 +1,4 @@
+[23-May-2020 06:17:40 UTC] PHP Warning:  require(/home/digipedi/diginet.my.id/laravel/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/digipedi/diginet.my.id/laravel/public/index.php on line 24
+[23-May-2020 06:17:40 UTC] PHP Warning:  require(/home/digipedi/diginet.my.id/laravel/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/digipedi/diginet.my.id/laravel/public/index.php on line 24
+[23-May-2020 06:17:40 UTC] PHP Fatal error:  require(): Failed opening required '/home/digipedi/diginet.my.id/laravel/public/../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/digipedi/diginet.my.id/laravel/public/index.php on line 24
+[23-May-2020 10:06:29 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/digipedi/diginet.my.id/laravel/app/Mail/EmailVerification.php on line 3
