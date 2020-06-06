@@ -45,7 +45,7 @@ class ShopController extends Controller
         {            
             return response()->json(['msg' => 4, 'type' => $request->type]); //axis
 
-        }else if(in_array($request->number, ['0811', '0812', '0813', '0821', '0822', '0852', '0853', '0823', '0851'])) {
+        }else if(in_array($request->number, ['0811', '0812', '0813', '0821', '0822', '0852', '0853', '0823'])) {
 
             return response()->json(['msg' => 1, 'type' => $request->type]); //tsel
 
@@ -65,7 +65,13 @@ class ShopController extends Controller
         }else if(in_array($request->number, ['0817', '0818', '0819', '0859', '0877', '0878'])){
 
             return response()->json(['msg' => 6, 'type' => $request->type]); //xl
+        
+        }else if(in_array($request->number, ['0851'])){
+
+            return response()->json(['msg' => 7, 'type' => $request->type]); //xl
         }
+
+       
 
 
     }

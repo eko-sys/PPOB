@@ -122,5 +122,21 @@
 					);
 				}
 			}
+
+
+			if($data->brand == 'BY.U' && $data->type == 'pulsa-reguler'){
+
+				$product = DB::table('products')->where('product_code', '=', $data->code)->get();
+
+				if(count($product) > 0){
+					DB::table('products')
+              			->where('product_code', $data->code)
+              			->update(['product_name' => $data->name, 'price' => $data->price+160]);
+				}else{
+					DB::table('products')->insert(
+					    ['product_name' => $data->name, 'product_code' => $data->code, 'price' => $data->price+200, 'type' => 'pulsa', 'provaider_id' => '7', 'note' => $data->note, 'category' => $data->category]
+					);
+				}
+			}
 		}
     	
